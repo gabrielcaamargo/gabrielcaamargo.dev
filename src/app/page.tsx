@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { Badge } from "@/components/Badge"
 import { Header } from "@/components/Header"
 import { Menu } from "@/components/Menu"
@@ -5,6 +6,10 @@ import { Menu } from "@/components/Menu"
 import typescript from '../assets/icons/typescript.png'
 import react from '../assets/icons/react.png'
 import nest from '../assets/icons/nest.png'
+
+export const metadata: Metadata = {
+  title: "Gabriel Camargo | Home",
+};
 
 export default function Home() {
   return (
