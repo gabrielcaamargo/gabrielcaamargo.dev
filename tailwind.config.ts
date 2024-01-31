@@ -21,7 +21,7 @@ const config: Config = {
       },
       animation: {
         show: 'show 1.5s linear 1 forwards',
-      },
+      }
     },
   },
   plugins: [],
