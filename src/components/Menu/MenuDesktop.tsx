@@ -1,8 +1,8 @@
 import Link from "next/link";
 
-export function Menu() {
+export function MenuDesktop() {
   return (
-    <nav>
+    <nav className="max-md:hidden">
       <ul className="flex items-center gap-4">
         <li className="text-nowrap ease-in hover:opacity-75 duration-100">
           <Link href='/'>Home</Link>
