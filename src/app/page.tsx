@@ -13,10 +13,10 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <main>
-      <Template.Root className="bg-black max-md:px-6 pb-24">
+      <Template.Root className="bg-black pb-24">
         <Template.Content>
           <Header />
-          <div className="mt-24 grid grid-cols-2 gap-10 animate-[show_1.5s_linear_1] antialiased justify-between max-md:grid-cols-1">
+          <div className="mt-24 max-md:mt-4 grid grid-cols-2 gap-10 animate-[show_1.5s_linear_1] antialiased justify-between max-md:grid-cols-1">
             <Introduction.Text />
             <Introduction.Image />
           </div>

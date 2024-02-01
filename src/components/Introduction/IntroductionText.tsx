@@ -14,7 +14,7 @@ export function IntroductionText() {
       
       <p className="mt-2 text-xl">Passionate about technology. Full stack developer with 3 years of professional experience. Always looking to deliver the best results and generate the best experiences.</p>
 
-      <div className="mt-4 flex items-center gap-2 max-md:grid max-md:grid-cols-3">
+      <div className="mt-4 flex items-center gap-2 max-md:grid max-md:grid-cols-3 max-sm:grid-cols-2">
         <Badge title="Typescript" icon={typescript} />
         <Badge title="React" icon={react} />
         <Badge title="React Native" icon={react} />
