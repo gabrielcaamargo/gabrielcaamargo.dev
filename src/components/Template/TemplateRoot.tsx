@@ -1,13 +1,12 @@
-'use client'
-import { ComponentProps } from "react";
-
-interface ITemplateRootProps extends ComponentProps<'div'>{
+interface ITemplateRootProps {
+  hasBorder?: boolean
   children: React.ReactNode,
+  className?: string
 }
 
-export function TemplateRoot({ children }: ITemplateRootProps) {
+export function TemplateRoot({ hasBorder = false, children, className }: ITemplateRootProps) {
   return (
-    <section className='max-w-[1200px] mx-auto mt-8 max-lg:px-6'>
+    <section className={`py-9 ${hasBorder && 'border-b'} ${className}`}>
       {children}
     </section>
   )
