@@ -2,10 +2,11 @@ import Image, { StaticImageData } from "next/image";
 
 interface IBadgeProps {
   icon?: StaticImageData;
-  title: string
+  title: string;
+  textSize?: string
 }
 
-export function Badge({ icon, title }: IBadgeProps) {
+export function Badge({ icon, title, textSize = 'text-xs' }: IBadgeProps) {
   return (
     <div className="flex items-center gap-2 rounded-md border w-full border-white border-opacity-25 px-2 py-1" title={title}>
       {icon && (
@@ -17,7 +18,7 @@ export function Badge({ icon, title }: IBadgeProps) {
           className="grayscale"
         />
       )}
-      <small className="text-white text-opacity-75 whitespace-nowrap">{title}</small>
+      <small className={`text-white text-opacity-75 whitespace-nowrap ${textSize}`}>{title}</small>
     </div>
   )
 }
