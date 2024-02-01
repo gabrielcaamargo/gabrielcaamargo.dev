@@ -4,6 +4,7 @@ import { Introduction } from "@/components/Introduction";
 import { Card } from "@/components/Card";
 
 import { skills } from "@/utils/skills";
+import { Template } from "@/components/Template";
 
 export const metadata: Metadata = {
   title: "Gabriel Camargo | Home",
@@ -14,16 +15,16 @@ export default function Home() {
   return (
     <main>
       <section className="bg-black px-8 py-6 max-md:px-6">
-        <div className="max-w-[1200px] mx-auto max-md:w-full">
+        <Template.Root>
           <Header />
           <div className="mt-24 grid grid-cols-2 gap-10 animate-[show_1.5s_linear_1] antialiased justify-between max-md:grid-cols-1">
             <Introduction.Text />
             <Introduction.Image />
           </div>
-        </div>
+        </Template.Root>
       </section>
 
-      <section className="max-w-[1200px] mx-auto mt-8 max-lg:px-6">
+      <Template.Root>
         <strong className="text-3xl">Skills</strong>
 
         <div className="grid grid-cols-4 gap-4 mt-4 max-md:grid-cols-2 max-sm:grid-cols-1">
@@ -36,7 +37,7 @@ export default function Home() {
             />
           ))}
         </div>
-      </section>
+      </Template.Root>
     </main>
   )
 }

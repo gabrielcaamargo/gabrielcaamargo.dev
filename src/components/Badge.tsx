@@ -6,9 +6,9 @@ interface IBadgeProps {
   textSize?: string
 }
 
-export function Badge({ icon, title, textSize = 'text-xs' }: IBadgeProps) {
+export function Badge({ icon, title, textSize = 'text-sm' }: IBadgeProps) {
   return (
-    <div className="flex items-center gap-2 rounded-md border w-full border-white border-opacity-25 px-2 py-1" title={title}>
+    <div className="flex items-center gap-2 rounded-md border w-full px-2 py-1" title={title}>
       {icon && (
         <Image 
           src={icon} 
