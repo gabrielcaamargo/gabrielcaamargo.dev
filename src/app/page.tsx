@@ -81,12 +81,12 @@ export default function Home() {
           <Template.Title>About me</Template.Title>
 
           <div className="flex flex-col gap-2">
-            <p>Hello world! My name is Gabriel, I am 18 years old and in the last 3 years I've been working as a fullstack developer. It all started during the pandemics when I did not have classes, so I used to spent all my day playing online games. I've always been curious about all technology works and how it is changing the world every single second. I decided to take some action about this curiosity, and started learning web development, and... I found myself in there. Since this moment, I've been specializing myself in the best and most modern technologies like: ReactJS, Typescript, React Native, AWS, NestJS, and more.</p>
+            <p>Hello world! My name is Gabriel, I am 18 years old and in the last 3 years I&apos;ve been working as a fullstack developer. It all started during the pandemics when I did not have classes, so I used to spent all my day playing online games. I&apos;ve always been curious about all technology works and how it is changing the world every single second. I decided to take some action about this curiosity, and started learning web development, and... I found myself in there. Since this moment, I&apos;ve been specializing myself in the best and most modern technologies like: ReactJS, Typescript, React Native, AWS, NestJS, and more.</p>
 
             <p>I am always looking to improve myself and deliver the best results as possible, seeking to satisfy more than what was required of me in each task, in each project. Today I bring ideas and dreams to life. I bring life to new and already structured companies and present them to the world.</p>
 
             <div className="w-full flex flex-col items-center">
-              <p className="text-lg text-center">Nice to meet you, I'm Gabriel. Let's build something unimaginable <span className="font-bold">together?</span></p>
+              <p className="text-lg text-center">Nice to meet you, I&apos;m Gabriel. Let&apos;s build something unimaginable <span className="font-bold">together?</span></p>
               <span className="text-center">
                 <a href="mailto:gcamargo.dev@gmail.com" target="_blank" className="font-bold">Send a letter&nbsp;</a>
                 <span className="opacity-75 text-xs">(also known as <i>email</i> in these modern days)</span>
