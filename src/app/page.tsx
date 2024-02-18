@@ -1,4 +1,5 @@
-import type { Metadata } from "next";
+'use client'
+
 import { Header } from "@/components/Header"
 import { Introduction } from "@/components/Introduction";
 import { Card } from "@/components/Card";
@@ -6,10 +7,9 @@ import { Card } from "@/components/Card";
 import { skills } from "@/utils/skills";
 import { Template } from "@/components/Template";
 import { Timeline } from "@/components/Timeline";
+import { ContactForm } from "@/components/ContactForm";
 
-export const metadata: Metadata = {
-  title: "Gabriel Camargo | Home",
-};
+import emailjs from '@emailjs/browser'
 
 export default function Home() {
   return (
@@ -93,6 +93,25 @@ export default function Home() {
               </span>
             </div>
           </div>
+        </Template.Content>
+      </Template.Root>
+
+      <Template.Root hasBorder>
+        <Template.Content>
+          <Template.Title>Contact me</Template.Title>
+
+          <div className="grid grid-cols-2 max-md:grid-cols-1">
+            <div>
+              <p className="font-medium text-2xl">Let&apos;s schedule a coffee?</p>
+              <p>Send me a message and I will answer you as soon as possible.</p>
+            </div>
+
+            <div className="max-md:mt-4">
+              <ContactForm />
+            </div>
+
+          </div>
+
         </Template.Content>
       </Template.Root>
     </main>
