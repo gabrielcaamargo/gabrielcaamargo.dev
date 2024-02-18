@@ -20,7 +20,7 @@ export function TimelineContent({ company, workingTime, role, description, techn
       <div>
         <p>{description}</p>
         <div className="flex mt-2">
-          <span className="font-medium">Technologies:</span>
+          <span className="font-medium">Technologies: </span>
           <div className="ml-2 grid grid-cols-4 gap-1 max-md:grid-cols-2">
             {technologies.map((technology, index) => <Badge title={technology} key={index} />)}
           </div>
