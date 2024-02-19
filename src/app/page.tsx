@@ -9,7 +9,7 @@ import { Template } from "@/components/Template";
 import { Timeline } from "@/components/Timeline";
 import { ContactForm } from "@/components/ContactForm";
 
-import emailjs from '@emailjs/browser'
+import { Footer } from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -114,6 +114,8 @@ export default function Home() {
 
         </Template.Content>
       </Template.Root>
+
+      <Footer />
     </main>
   )
 }
